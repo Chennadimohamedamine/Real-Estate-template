@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+:root{
+    --color : #1f4b43e5;
+    --fontStyleNumber : "Lora", serif;
+}
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    font-family: "Playfair Display", serif;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+button{
+    border: none;
+    outline: none;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+.active:after{
+    width: 100%;
+}
+.active-menu{
+    top: 4.68rem !important;
+}
+.scroll-header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background-color: #ffffff6b;
+    padding-top: 2rem;
+    margin: 0;
+    padding-bottom: 23px;
+}

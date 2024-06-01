@@ -1,0 +1,212 @@
+@import url(Gstyle.css);
+
+/* ============= header-style ============= */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.3rem;
+    padding: 15px 30px;
+}
+header>a{
+    margin-right: 5rem;
+
+}
+header>a>img {
+    width: 9rem;
+}
+
+header>nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+header>nav>a {
+    /* margin-right: 2rem; */
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color);
+    position: relative;
+}
+
+header>nav>a::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    background-color: var(--color);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition: width .4s;
+    cursor: pointer;
+}
+
+header>nav>a:hover::after {
+    width: 100%;
+}
+
+header>nav>div {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: 15rem;
+}
+
+header>nav>div>a {
+    color: var(--color);
+}
+
+header>nav>div>a>i {
+    font-size: 1.5rem;
+}
+
+header>nav>div>a:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--fontStyleNumber);
+}
+
+header>nav>div>a:nth-child(2) {
+    display: grid;
+    place-content: center;
+    padding: 9px;
+    border-radius: 50%;
+    border: 1.5px solid var(--color);
+}
+
+header>nav>div>a:nth-child(2)>i {
+    font-size: 1.08rem;
+}
+header>nav>div>a:nth-child(3) {
+    display: grid;
+    place-content: center;
+    padding: 8px 33px;
+    border-radius: 23px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: 2px solid var(--color);
+    transition: all .4s;
+}
+
+header>nav>div>a:nth-child(3):hover {
+    background-color: var(--color);
+    color: #fff;
+}
+/* ================ home section ============== */
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+/* ======================== media for responsev ============== */
+@media screen and (max-width: 1452px)
+{
+    header>nav>div>a:nth-child(1){
+        display: none;
+    }
+    header>nav>div {
+        margin-left: 6rem;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+    header>nav>div {
+        margin-left: 3rem;
+    }
+    header>nav {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+    }
+    .btn-menu {
+        position: relative;
+        width: 40px;
+        height: 29px;
+        background: transparent;
+        cursor: pointer;
+    }
+    
+    .btn-menu span {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background:var(--color);
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+    }
+    .btn-menu span:nth-child(1) {
+        top: 0px;
+        transform-origin: left center;
+    }
+    .btn-menu span:nth-child(1) {
+        top: 0px;
+        transform-origin: left center;
+    }
+    .btn-menu span:nth-of-type(2) {
+        top: 50%;
+        transform: translateY(-50%);
+        transform-origin: left center;
+      }
+      
+    .btn-menu span:nth-of-type(3) {
+        top: 100%;
+        transform-origin: left center;
+        transform: translateY(-100%);
+    }
+    .btn-menu-active span:nth-of-type(1) {
+        transform: rotate(45deg);
+        top: 0px;
+        left: 5px;
+    }
+    .btn-menu-active span:nth-of-type(2) {
+        width: 0%;
+        opacity: 0;
+    }
+    .btn-menu-active span:nth-of-type(3) {
+        transform: rotate(-45deg);
+        top: 28px;
+        left: 5px;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: -25rem;
+        width: 100%;
+        height: auto;
+        align-items: flex-start;
+        padding: 14px 2px 19px 28px;
+        border-bottom-left-radius: 23px;
+        border-bottom-right-radius: 23px;
+        transition: all 1s;
+        z-index: -1;
+    }
+    .navbar > div {
+        display: flex;
+        margin: 0;
+        align-items: center;
+        margin-top: 18px;
+    }
+    header>nav>div>a:nth-child(3){
+        padding: 8px 83px;
+        margin-left: 20px;
+    }
+}
