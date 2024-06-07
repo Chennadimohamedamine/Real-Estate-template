@@ -33,20 +33,3 @@ button{
     cursor: pointer;
     background-color: transparent;
 }
-.active:after{
-    width: 100%;
-}
-.active-menu{
-    top: 4.68rem !important;
-}
-.scroll-header{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    backdrop-filter: blur(10px);
-    background-color: #ffffff6b;
-    padding-top: 2rem;
-    margin: 0;
-    padding-bottom: 23px;
-}
