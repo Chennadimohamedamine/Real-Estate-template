@@ -18,6 +18,9 @@
 .active_btn-item-1 > i{
   animation: keyframes-rotate .5s;
 }
+i {
+  cursor: pointer;
+}
 @keyframes keyframes-rotate {
   0% {
     transform: rotate(0deg);

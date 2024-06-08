@@ -106,14 +106,12 @@ section{
     display: flex;
     width: 58%;
     height: auto;
-    margin: 0 auto;
-    border: 1px solid red;
+    margin-top: 8rem;
 }
 /*  ========= first child in [  .container-home  > div ] ============ */
 .container-home > div:nth-child(1)
 {
     padding: 30px;
-    border: 1px solid #050;
 }
 .container-home > div:nth-child(1) > p{
     color: var(--color);
@@ -124,12 +122,6 @@ section{
 }
 .container-home > div:nth-child(1) > h1 > span{
     color: #ffc400;
-}
-.container-home > div:nth-child(1)
-{
-    padding: 30px;
-    border: 1px solid #050;
-    /* background-color: aquamarine; */
 }
 .container-home > div:nth-child(1) > form
 {
@@ -348,8 +340,9 @@ section{
     border-radius: 31px;
     padding: 3px;
     overflow: hidden;
-    border: 1px solid #777777;
+    /* border: 1px solid #777777; */
     background-color: #fff;
+    box-shadow: -53px -2px 124px 8px rgba(0,0,0,0.17);
 }
 .container-home > div:nth-child(2) > div:nth-child(1) > i
 {
@@ -419,13 +412,13 @@ section{
     position: absolute;
     bottom: -12.5rem;
     right: 19%;
-    padding: 34px;
+    padding: 26px;
     background-color: #fff;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    border: 1px solid green;
+    gap: 1.5rem;
+    box-shadow: 42px 34px 48px -18px rgba(0,0,0,0.17);
 }
 .container-home > div:nth-child(3) > div:nth-child(1)
 {
@@ -440,9 +433,20 @@ section{
     display: grid;
     place-content: center;
     outline: 5px solid #fff;
-    border: 1px solid red;
+    border: 2px solid red;
     border-radius: 50%;
     overflow: hidden;
+}
+.container-home > div:nth-child(3) > div:nth-child(2) >span
+{
+    color: #000;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    margin-right: 5px;
+}
+.container-home > div:nth-child(3) > div:nth-child(1) > div > img
+{
+    width: 36px;
 }
 /* ======================== media for responsev ============== */
 @media screen and (max-width: 1452px)
