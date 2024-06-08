@@ -1,0 +1,103 @@
+<!-- <section class="home-section">
+        <div class="container-home">
+            <div>
+                <p>From as low as $10 per day with limited time offer discounts.</p>
+                <h1>Your <span>Property</span>, Our Priority.</h1>
+                <form>
+                    <div>
+                        <p class="p-item-container">Keyword</p>
+                        <div>
+                            <input type="text" name="" id="" placeholder="Enter keyword">
+                            <i class='bx bx-search'></i>
+                        </div>
+                    </div>
+                    <span class="item-container-home"></span>
+                    <div>
+                        <p class="p-item-container">Status</p>
+                        <div>
+                            <span class="select-item">
+                                <span class="item-data-select-item">
+                                    All Status
+                                </span>
+                                <span>
+                                    <i class='bx bx-chevron-down'></i>
+                                </span>
+                            </span>
+                        </div>
+                        <ul>
+                            <li class="this-option" data-value="For Sale">
+                                <div class="checkBox">
+                                    <div></div>
+                                </div>
+                                For Sale
+                            </li>
+                            <li data-value="For Ren">
+                                <div class="checkBox">
+                                    <div></div>
+                                </div>
+                                For Ren
+                            </li>
+                            <li data-value="Sold">
+                                <div class="checkBox">
+                                    <div></div>
+                                </div>
+                                Sold
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="item-container-home"></span>
+                    <div>
+                        <p class="p-item-container">Type</p>
+                        <div>
+                            <p class="select-option">All Type</p>
+                            <i class='bx bx-chevron-down'></i>
+                        </div>
+                        <ul>
+                            <li class="this-option" data-value="All Type">All Type <i class="bi bi-check2"></i></li>
+                            <li data-value="Office">Office <i class="bi bi-check2"></i></li>
+                            <li data-value="Villa">Villa <i class="bi bi-check2"></i></li>
+                            <li data-value="Apartment">Apartment <i class="bi bi-check2"></i></li>
+                            <li data-value="town home">town home <i class="bi bi-check2"></i></li>
+                            <li data-value="Cape Cod">Cape Cod <i class="bi bi-check2"></i></li>
+                        </ul>
+                    </div>
+                    <button>
+                        <i class="bi bi-sliders"></i>
+                        Filter
+                        <div style="display: none;"></div>
+                    </button>
+                    <button>Search</button>
+                </form>
+                <div>
+                    <p> Popular Search</p>
+                    <a href="">Modern Villa</a>
+                    <a href="">Studio Apartment</a>
+                    <a href="">Town House</a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <input type="text" placeholder="search Property">
+                    <i class="bi bi-search"></i>
+                </div>
+                <div>
+                    <div class="item-grid-1">
+                        <div><img src="./img/grid-img-1.jpeg" alt="grid-img-1"></div>
+                        <div><img src="./img/grid-img-2.jpeg" alt="grid-img-2"></div>
+                    </div>
+                    <div class="item-grid-2">
+                        <div><img src="./img/grid-img-3.jpeg" alt="grid-img-3"></div>
+                        <div><img src="./img/grid-img-4.jpeg" alt="grid-img-4"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div><img src="./img/avatar-1.png" alt="avatar-1"></div>
+                    <div><img src="./img/avatar-2.png" alt="avatar-2"></div>
+                    <div><img src="./img/avatar-3.png" alt="avatar-3"></div>
+                </div>
+                <div><span>1000K+</span> Exclusive Agetns</div>
+            </div>
+        </div>
+    </section> -->

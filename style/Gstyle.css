@@ -15,6 +15,7 @@
 body{
     position: relative;
     font-family: "Playfair Display", serif;
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
@@ -37,4 +38,87 @@ button{
 input{
     border: none;
     outline: none;
+}
+
+
+
+
+/*  ========= slect in home by class  filter-container-item-2 */
+.active-select-1{
+    display: flex !important;
+    position: absolute;
+    width: 19rem;
+    border: 1px solid #00000091;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    transition: all 2s ease-out;
+}
+.active-select-1 >li{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.active-select-1 >li:hover
+{
+    background-color: #edededb5;
+}
+.checkBox{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    position: relative;
+    display: grid;
+    place-content: center;
+    transition: all .8s;
+}
+.checkBox > div{
+    display: none;
+} 
+.this-option > .checkBox > div{
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #000;
+    transition: all .8s;
+}
+/*  ========= slect in home by class  filter-container-item-3 */
+.active-select-2{
+    display: flex !important;
+    position: absolute;
+    width: auto;
+    border: 1px solid #00000091;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    transition: all 2s ease-out; 
+}
+.active-select-2 > li > i{
+    display: none;
+}
+.this-option > i{
+    display: block !important;
+}
+.active-select-2 > li{
+    display: flex;
+    align-items: center;
+    padding: 8px 11px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 17rem;
+    justify-content: space-between;
+}
+.active-select-2 > li:hover{
+    background-color: #edededb5;
 }

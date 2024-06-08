@@ -4,6 +4,15 @@
 .active-menu{
     top: 4.68rem !important;
 }
+.item-container-home{
+  display: inline-block;
+  width: 1.5px;
+  height: 51px;
+  margin-top: 10px;
+  background-color: #ebebeb;
+  border-radius: 20px;
+}
+
 .scroll-header{
     position: absolute;
     left: 0;
@@ -14,6 +23,7 @@
     padding-top: 2rem;
     margin: 0;
     padding-bottom: 23px;
+    z-index: 100;
 }
 .active_btn-item-1 > i{
   animation: keyframes-rotate .5s;
