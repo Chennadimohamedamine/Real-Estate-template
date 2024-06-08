@@ -33,3 +33,7 @@ button{
     cursor: pointer;
     background-color: transparent;
 }
+input{
+    border: none;
+    outline: none;
+}

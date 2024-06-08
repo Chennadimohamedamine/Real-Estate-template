@@ -50,28 +50,28 @@
                         <p class="p-item-container">Status</p>
                         <div>
                             <span class="select-item">
-                                All Status
+                                <span class="item-data-select-item">
+                                    All Status
+                                </span>
                                 <span>
-                                    <i class='bx bx-chevron-down active_btn'></i>
-                                    <i class='bx bx-chevron-up'></i>
+                                    <i class='bx bx-chevron-down'></i>
                                 </span>
                             </span>
-
                         </div>
                         <ul>
-                            <li class="this-option">
+                            <li class="this-option" data-value="For Sale">
                                 <div class="checkBox">
                                     <div></div>
                                 </div>
                                 For Sale
                             </li>
-                            <li>
+                            <li data-value="For Ren">
                                 <div class="checkBox">
                                     <div></div>
                                 </div>
                                 For Ren
                             </li>
-                            <li>
+                            <li data-value="Sold">
                                 <div class="checkBox">
                                     <div></div>
                                 </div>
@@ -79,9 +79,44 @@
                             </li>
                         </ul>
                     </div>
+                    <span class="item-container-home"></span>
+                    <div>
+                        <p class="p-item-container">Type</p>
+                        <div>
+                            <p class="select-option">All Type</p>
+                            <i class='bx bx-chevron-down'></i>
+                        </div>
+                        <ul>
+                            <li class="this-option" data-value="All Type">All Type <i class="bi bi-check2"></i></li>
+                            <li data-value="Office">Office <i class="bi bi-check2"></i></li>
+                            <li data-value="Villa">Villa <i class="bi bi-check2"></i></li>
+                            <li data-value="Apartment">Apartment <i class="bi bi-check2"></i></li>
+                            <li data-value="town home">town home <i class="bi bi-check2"></i></li>
+                            <li data-value="Cape Cod">Cape Cod <i class="bi bi-check2"></i></li>
+                        </ul>
+                    </div>
+                    <button>
+                        <i class="bi bi-sliders"></i>
+                        Filter
+                        <div style="display: none;"></div>
+                    </button>
+                    <button>Search</button>
                 </form>
+                <div>
+                    <p> Popular Search</p>
+                    <a href="">Modern Villa</a>
+                    <a href="">Studio Apartment</a>
+                    <a href="">Town House</a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <input type="text">
+                    <i class="bi bi-search"></i>
+                </div>
             </div>
         </div>
+
     </section>
     <!-- ====== javascript file link ======== -->
     <script src="./script/main.js"></script>
@@ -89,38 +124,3 @@
 
 </html>
 <!-- https://creativelayers.net/themes/justhome-html/home-05.html == > link web  -->
-<!-- <form>
-                    <div>
-                        <div>
-                            <span>Keyword</span>
-                            <input type="search" name="" id="">
-                            <i class='bx bx-search'></i>
-                        </div>
-                        <div>
-                            <p>For Sale</p>
-                            <ul>
-                                <li class="this-option">For Sale</li>
-                                <li>For Ren</li>
-                                <li>Sold</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div>
-                        <p>All Type</p>
-                        <i class='bx bx-chevron-down'></i>
-                        <i class='bx bx-chevron-up'></i>
-                        <ul>
-                            <li class="this-option">All Type</li>
-                            <li>Office</li>p
-                            <li>Villa</li>
-                            <li>Apartment</li>
-                            <li>townhome</li>
-                            <li>Cape Cod</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <button><i class="bi bi-filter"></i> Filter</button>
-                        <button>Search</button>
-                    </div>
-            </div>
-            </form> -->

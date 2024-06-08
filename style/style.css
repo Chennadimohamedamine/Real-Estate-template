@@ -129,6 +129,7 @@ section{
 {
     padding: 30px;
     border: 1px solid #050;
+    /* background-color: aquamarine; */
 }
 .container-home > div:nth-child(1) > form
 {
@@ -138,9 +139,9 @@ section{
     align-items: center;
     gap: 25px;
     padding: 20px 15px;
-    background-color: aqua;
     border: .5px solid #868686be;
     border-radius: 8px;
+    margin-top: 4rem;
 }
 .container-home > div:nth-child(1) > form > div:nth-child(1)
 {
@@ -187,19 +188,35 @@ section{
 .container-home > div:nth-child(1) > form > div:nth-of-type(2){
     position: relative;
 }
+.container-home > div:nth-child(1) > form > div:nth-of-type(2) > div > span {
+    display: inline-flex;
+    cursor: pointer;
+    width: 9.5rem;
+    justify-content: space-between;
+}
+.container-home > div:nth-child(1) > form > div:nth-of-type(2) > div > span > span > i{
+    display: inline-block;
+    font-size: 1.5rem;
+    /* animation: keyframes-return .5s; */
+}
+/* == item option 1  style in home section */
 .container-home > div:nth-child(1) > form > div:nth-of-type(2) > ul{
+    display: none;
+}
+.active-select-1{
+    display: flex !important;
     position: absolute;
-    width: 17rem;
-    border: 2px solid #00000091;
+    width: 19rem;
+    border: 1px solid #00000091;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 20px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 5px;
+    transition: all 2s ease-out;
 }
-.container-home > div:nth-child(1) > form > div:nth-of-type(2) > ul >li{
+.active-select-1 >li{
     display: flex;
     align-items: center;
     gap: 20px;
@@ -207,32 +224,10 @@ section{
     border-radius: 10px;
     cursor: pointer;
 }
-.container-home > div:nth-child(1) > form > div:nth-of-type(2) > ul >li:hover
+.active-select-1 >li:hover
 {
     background-color: #edededb5;
 }
-.container-home > div:nth-child(1) > form > div:nth-of-type(2) > div > span {
-    display: inline-flex;
-    /* align-items: center; */
-    cursor: pointer;
-
-}
-.container-home > div:nth-child(1) > form > div:nth-of-type(2) > div > span > span{
-    display: inline-block;
-    margin-left: 5rem;
-}
-.container-home > div:nth-child(1) > form > div:nth-of-type(2) > div > span > span > i{
-    display: none;
-}
-.active_btn{
-    font-size: 1.5rem;
-    display: inline-block !important;
-}
-
-
-
-/* == item option style in home section */
-
 .checkBox{
     width: 25px;
     height: 25px;
@@ -241,15 +236,131 @@ section{
     position: relative;
     display: grid;
     place-content: center;
+    transition: all .8s;
 }
 .checkBox > div{
-    /* position: absolute;
-    inset: 0; */
+    display: none;
+} 
+.this-option > .checkBox > div{
+    display: block;
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background: #000;
+    transition: all .8s;
 }
+/* == item option 2  style in home section */
+.container-home > div:nth-child(1) > form > div:nth-of-type(3) > div
+{ 
+    display: flex;
+    align-items: center;
+    width: 9.5rem;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.container-home > div:nth-child(1) > form > div:nth-of-type(3) > div > i{
+    font-size: 1.5rem;
+}
+.container-home > div:nth-child(1) > form > div:nth-of-type(3) > ul{
+    display: none;
+}
+.container-home > div:nth-child(1) > form > div:nth-of-type(3){
+    position: relative;
+}
+.active-select-2{
+    display: flex !important;
+    position: absolute;
+    width: auto;
+    border: 1px solid #00000091;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    transition: all 2s ease-out; 
+}
+.active-select-2 > li > i{
+    display: none;
+}
+.this-option > i{
+    display: block !important;
+}
+.active-select-2 > li{
+    display: flex;
+    align-items: center;
+    padding: 8px 11px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 17rem;
+    justify-content: space-between;
+}
+.active-select-2 > li:hover{
+    background-color: #edededb5;
+}
+/* ==== btn filter and serch in home section ====*/
+.container-home > div:nth-child(1) > form > button{
+    display: grid;
+    place-content: center;
+    padding: 15px 31px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+.container-home > div:nth-child(1) > form > button:nth-of-type(1){
+        display: flex;
+        gap: 10px;
+        border: 1px solid #bebebee0;
+        margin-left: 2rem;
+}
+.container-home > div:nth-child(1) > form > button:nth-of-type(2){
+       background-color: var(--color);
+       color: #fff;
+}
+/* last div in .container-home > div:nth-child(1)  use style  =======*/
+.container-home > div:nth-child(1) > div{
+    display: flex;
+    align-items: center;
+    color: var(--color);
+    margin-top: 4rem;
+    gap: 2rem;
+}
+.container-home > div:nth-child(1) > div > a{
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 13px;
+    background-color: #fff;
+    border: .7px solid #bcbcbc;
+}
+.container-home > div:nth-child(2)
+{
+    position: relative;
+}
+/*  style div:nth-child(1) in  div:nth-child(2)*/
+
+.container-home > div:nth-child(2) > div:nth-child(1)
+{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: -50px;
+    border: 1px solid red;
+    
+}
+.container-home > div:nth-child(2) > div:nth-child(1) > i
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    color: #fff;
+    background-color: var(--color);
+}
+
+
+/* =============== style child 2 in  container-home */
+
 /* ======================== media for responsev ============== */
 @media screen and (max-width: 1452px)
 {
