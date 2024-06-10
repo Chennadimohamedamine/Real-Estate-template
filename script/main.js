@@ -31,38 +31,38 @@ menu.onclick = () => {
 //     }
 // })
 // item select click event add  option in home section 
-item_select_1.parentElement.onclick = () => {
-    console.log("hey");
-    item_option1[0].parentElement.classList.toggle("active-select-1");
-    item_select_1_.classList.toggle("active_btn-item-1");
-};
+// item_select_1.parentElement.onclick = () => {
+//     console.log("hey");
+//     item_option1[0].parentElement.classList.toggle("active-select-1");
+//     item_select_1_.classList.toggle("active_btn-item-1");
+// };
 //  item -option in home section
-item_option1.forEach((e) => {
-    e.onclick = () => {
-        item_option1.forEach((e) => {
-            if (e.classList.contains("this-option"))
-                e.classList.remove("this-option");
-        });
-        e.classList.add("this-option");
-        item_select_1.innerText = e.getAttribute("data-value");
-        e.parentElement.classList.remove("active-select-1");
-        item_select_1_.children[0].classList.remove("active_btn-item-1");
-    }
-});
-// item select 2  click event add  option in home section 
-item_select_2.parentElement.onclick = () => {
-    console.log("log");
-    item_option_2[0].parentElement.classList.toggle("active-select-2");
-};
-//  item -option in home section 2 
-item_option_2.forEach((e) => {
-    e.onclick = () => {
-        item_option_2.forEach((e) => {
-            if (e.classList.contains("this-option"))
-                e.classList.remove("this-option");
-        });
-        e.classList.add("this-option");
-        targget_option.innerText = e.getAttribute("data-value");
-        item_option_2[0].parentElement.classList.remove("active-select-2");
-    }
-});
+// item_option1.forEach((e) => {
+//     e.onclick = () => {
+//         item_option1.forEach((e) => {
+//             if (e.classList.contains("this-option"))
+//                 e.classList.remove("this-option");
+//         });
+//         e.classList.add("this-option");
+//         item_select_1.innerText = e.getAttribute("data-value");
+//         e.parentElement.classList.remove("active-select-1");
+//         item_select_1_.children[0].classList.remove("active_btn-item-1");
+//     }
+// });
+// // item select 2  click event add  option in home section 
+// item_select_2.parentElement.onclick = () => {
+//     console.log("log");
+//     item_option_2[0].parentElement.classList.toggle("active-select-2");
+// };
+// //  item -option in home section 2 
+// item_option_2.forEach((e) => {
+//     e.onclick = () => {
+//         item_option_2.forEach((e) => {
+//             if (e.classList.contains("this-option"))
+//                 e.classList.remove("this-option");
+//         });
+//         e.classList.add("this-option");
+//         targget_option.innerText = e.getAttribute("data-value");
+//         item_option_2[0].parentElement.classList.remove("active-select-2");
+//     }
+// });

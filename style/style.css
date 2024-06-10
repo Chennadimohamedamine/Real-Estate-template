@@ -105,7 +105,6 @@ header>nav>div>a:nth-child(3):hover {
 section {
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     margin-top: 8rem;
 }
@@ -115,21 +114,25 @@ section {
     align-items: center;
     width: auto;
     height: auto;
+    margin-top: 4rem;
+    margin-left: 24.5%;
+    position: relative;
     /* border: 1px solid red; */
 }
 
 /* ====== style first side in home container ======*/
-.first-row-home-container {
-    padding: 30px;
+.first-row-home-container{
+    /* border: 1px solid red; */
 }
-
 .first-row-home-container>p {
     color: var(--color);
 }
 
 .first-row-home-container>h1 {
     font-size: 3.5rem;
+    max-width: 45.2rem;
     color: var(--color);
+    mix-blend-mode: difference;
 }
 
 .first-row-home-container>h1>span {
@@ -148,7 +151,12 @@ section {
     margin-top: 4rem;
     background-color: #fff;
 }
-
+.filter_container > div:nth-child(1)
+{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
 .p-item-container {
     font-size: 13px;
     color: #7e7e7ec3;
@@ -189,14 +197,14 @@ section {
     position: relative;
 }
 
-.filter-container-item-2>div>span {
+.filter-container-item-2>div{
     display: inline-flex;
     cursor: pointer;
     width: 10.5rem;
     justify-content: space-between;
 }
 
-.filter-container-item-2>div>span>span>i {
+.filter-container-item-2>div>span>i {
     display: inline-block;
     font-size: 1.5rem;
 }
@@ -259,21 +267,32 @@ section {
     align-items: center;
     color: var(--color);
     margin-top: 4rem;
+    max-width: 35rem;
     gap: 2rem;
 }
-
-.Popular-Search-container-1>a {
+.Popular-Search-container-1 > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.Popular-Search-container-1 > div > a {
+   display: grid;
+   place-content: center;
     padding: 6px 16px;
     border-radius: 30px;
     font-size: 13px;
     background-color: #fff;
     border: .7px solid #bcbcbc;
+    /* margin-left: 10px; */
 }
 
 
 /*  ============================== secend side in home container */
 .secend-row-home-container {
-    position: relative;
+    position: absolute;
+    right: -30%;
+    bottom: -12rem;
+    z-index: -1;
     /* border: 1px solid green; */
 }
 
@@ -282,8 +301,8 @@ section {
     display: flex;
     align-items: center;
     position: absolute;
-    left: -4rem;
-    top: 2.5rem;
+    left: -3%;
+    top: 2rem;
     gap: 5rem;
     border-radius: 31px;
     padding: 3px;
@@ -357,7 +376,7 @@ section {
 .secend-row-item-3{
     position: absolute;
     bottom: -2rem;
-    right: -2rem;
+    right: -16px;
     padding: 26px;
     background-color: #fff;
     border-radius: 25px;
@@ -391,6 +410,44 @@ section {
     margin-right: 5px;
 }
 /* ======================== media for responsev ============== */
+@media screen and (max-width: 1887px){
+    .container-home {
+        margin-left: 15.5%;
+    }
+}
+@media screen and (max-width: 1655px){
+    .container-home {
+        margin-left: 6.5%;
+    }
+}
+@media screen and (max-width: 1480px){
+    .container-home {
+        margin-left: 2.5%;
+    }
+}
+@media screen and (max-width: 1425px){
+    .secend-row-home-container {
+        right: -21%;
+    }
+}
+@media screen and (max-width: 1325px){
+    .secend-row-item-3 {
+        right: 0px;
+    }
+}
+@media screen and (max-width: 1305px){
+    .secend-row-home-container {
+        right: -15%;
+    }
+}
+@media screen and (max-width: 1236px){
+    .secend-row-home-container {
+        right: -8%;
+    }
+    .container-home {
+        margin-left: 10px;
+    }
+}
 @media screen and (max-width: 1452px) {
     header>nav>div>a:nth-child(1) {
         display: none;
@@ -399,6 +456,93 @@ section {
     header>nav>div {
         margin-left: 6rem;
     }
+}
+@media screen and (max-width: 1166px) {
+    .secend-row-home-container {
+        right: 0;
+    }
+}
+@media screen and (max-width: 1062px) {
+    .container-home {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .secend-row-home-container
+    {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+        
+    }
+    .item-container-home{
+        display: none;
+    }
+    .section-home
+    {
+        margin-top: 0;
+    }
+    .filter_container > div:nth-child(1)
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .first-row-home-container
+    {
+        width: 99%;
+    }
+    .filter_container {
+        gap: 15px;
+    }
+    .filter-container-item-1 {
+        display: flex;
+        width: 100%;
+    }
+    .filter-container-item-1 > div {
+        justify-content: space-between;
+    }
+    .filter-container-item-2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 3px;
+    }
+    .filter-container-item-2 > div{
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+    }
+    .filter-container-item-3 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 3px;
+    }
+    .filter-container-item-3 > div{
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+    }
+    .first-row-home-container{
+        width: 100%;
+        border: #9bf400 1px solid;
+    }
+    .secend-row-item-1{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .secend-row-item-2,.secend-row-item-3{
+        position: relative;
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 1075px) {
@@ -412,6 +556,7 @@ section {
         gap: 1.6rem;
     }
 }
+
 
 @media screen and (max-width: 990px) {
     header {
@@ -507,5 +652,34 @@ section {
     header>nav>div>a:nth-child(3) {
         padding: 8px 83px;
         margin-left: 20px;
+    }
+}
+@media screen and (max-width: 703px) {
+    .filter_container {
+        gap: 24px;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 600px) {
+    .Popular-Search-container-1
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Popular-Search-container-1 > div
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 550px) {
+    .filter_container , .Popular-Search-container-1
+    {
+        margin-top: 3rem;
+    }
+}
+@media screen and (max-width: 512px) {
+    .first-row-home-container>h1 {
+        font-size: 2.5rem;
     }
 }
