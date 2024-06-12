@@ -561,14 +561,157 @@ section.featured-Properties
     width: 100%;
     height: auto;
     margin-top: 2rem;
-    border: 1px solid #aaff00;
+    /* border: 1px solid #aaff00; */
     margin-bottom: 5rem;
     display: flex;
     justify-content: center;
 }
+.sec-3-properties-container
+{
+    width: 60%;
+    /* border: 1px solid red; */
+    padding: 20px;
+}
+/* ===========first side in section peatured-Properties =========== */
+.sec-3-properties-frist-side > h1
+{
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 20px;
+    max-width: 22.5rem;
+}
+.sec-3-properties-frist-side > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 4rem;
+    flex-wrap: wrap;
+}
+.sec-3-properties-frist-side > div > p{
+    max-width: 30rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--color);
+}
+.sec-3-properties-frist-side > div > div
+{
+    padding: 8px 9px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 5rem;
+    background-color: #f0f0f07d;
 
+}
+.sec-3-properties-frist-side > div > div >button{
+    padding: 9px 23px;
+    border-radius: 4rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: transparent;
+}
+.active-btn-sec-3{
+    background-color: #fff !important;
+}
+/* ============ secend side in section peatured-Properties ==============*/
+.sec-3-properties-secend-side{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: 1px solid green;
+    margin-top: 2rem;
+}
+/* ============ card-section-3 ==============*/
+.card-section-3{
+    padding: 10px;
+    border: 1px solid red;
+    width: 32.4%;
+    height: auto;
+}
+/*  ========= .card-section-3 first child =========== */
+.card-section-3 > div:nth-child(1){
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+}
+.card-section-3 > div:nth-child(1) > div:nth-child(2)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 20px;
+}
+.card-section-3 > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > a{
+    padding: 7px 12px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    font-size: 14px;
+    margin-right: 7px;
+    font-weight: 500;
+}
+.card-section-3 > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > a:nth-child(1)
+{
+    background-color: rgb(10, 62, 10);
+    color: #fff;
+}
+.card-section-3 > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > a:nth-child(2)
+{
+    background-color: #e7c873;
+}
+.card-section-3 > div:nth-child(1) > div:nth-child(2) > div:nth-child(2)
+{
+    padding: 6px 8px;
+    background-color: #00000059;
+    color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+.dir-btn-slider{
+    position: absolute;
+    top: 43%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 28px;
+}
+.dir-btn-slider > button > i
+{
+    font-size: 1.3rem;
+    color: #fff;
+}
+.many-btn{
+    position: absolute;
+    bottom: 28px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+.many-btn > button > i{
+    font-size: 8px;
+    color: #ffffff7b;
+}
+.btn-slider-pos > i
+{
+    color: #fff !important;
+}
+/*  ========= .card-section-3 secend child =========== */
 
 /* ======================== media for responsev ============== */
+
 @media screen and (max-width: 1887px) {
     .container-home {
         margin-left: 15.5%;
@@ -580,6 +723,10 @@ section.featured-Properties
         height: auto;
         gap: 5rem;
         padding: 21px;
+    }
+    .sec-3-properties-container
+    {
+        width: 100%;
     }
 }
 
