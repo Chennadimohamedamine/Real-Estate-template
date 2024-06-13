@@ -8,6 +8,7 @@
     <!--   ==== file css and icon  -->
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -219,13 +220,35 @@
                     </div>
                 </div>
             </div>
+
             <div class="sec-3-properties-secend-side">
                 <div class="card-section-3">
-                    <div>
-                        <div>
-                            <img src="./img/home-1.jpeg" alt="home-1">
+                    <div class="swiper mySwiper slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="img-hover"><img src="./img/home-1.jpeg" alt="Image 1"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-hover"><img src="./img/home-2.jpeg" alt="Image 2"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-hover"><img src="./img/home-3.jpeg" alt="Image 3"></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img-hover"><img src="./img/home-4.jpeg" alt="Image 4"></div>
+                            </div>
                         </div>
-                        <div>
+                        <div class="dir-btn-slider">
+                            <button style="width: 20px; height: 20px;" class="swiper-button-next"></button>
+                            <button class="swiper-button-prev"></button>
+                        </div>
+                        <div class="many-btn">
+                            <button class="btn-slider-pos"><i class="bi bi-circle-fill"></i></button>
+                            <button><i class="bi bi-circle-fill"></i></button>
+                            <button><i class="bi bi-circle-fill"></i></button>
+                            <button><i class="bi bi-circle-fill"></i></button>
+                        </div>
+                        <div class="content-slider">
                             <div>
                                 <a href="#">FOR RENT</a>
                                 <a href="#">FEATURED</a>
@@ -234,33 +257,34 @@
                                 <i class="bi bi-heart"></i>
                             </div>
                         </div>
-                        <div class="dir-btn-slider">
-                            <button><i class="bi bi-chevron-left"></i></button>
-                            <button><i class="bi bi-chevron-right"></i></button>
-                        </div>
-                        <div class="many-btn">
-                            <button  class="btn-slider-pos"><i class="bi bi-circle-fill"></i></button>
-                            <button><i class="bi bi-circle-fill"></i></button>
-                            <button><i class="bi bi-circle-fill"></i></button>
-                            <button><i class="bi bi-circle-fill"></i></button>
+                        <span class="hover-card-3"></span>
+                    </div>
+                    <div>
+                        <div><a href="#">Archer House</a> <p>$815,000</p></div>
+                        <p><span><i class="bi bi-geo-alt"></i></span> 148-37 88th Ave, Jamaica, NY 11435</p>
+                        <div>
+                            <p><span><i class='bx bx-hotel'></i></span>4 Beds</p>
+                            <span class="fassli"></span>
+                            <p><span><i class='bx bx-bath' ></i></span>3 Baths</p>
+                            <p><span><i class='bx bx-minus-front' ></i></span>2660 Sqft</p>
                         </div>
                     </div>
-                    <div></div>
-                </div>
-                <div class="card-section-3">
-                    <div></div>
-                    <div></div>
-                </div>
-                <div class="card-section-3">
-                    <div></div>
-                    <div></div>
                 </div>
             </div>
+
         </div>
     </section>
     <!-- ====== javascript file link ======== -->
     <script src="./script/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>
-<!-- https://creativelayers.net/themes/justhome-html/home-05.html == > link web  -->
