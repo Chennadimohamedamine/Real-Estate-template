@@ -1539,28 +1539,43 @@ section.featured-Properties {
 /* ============================= section 8 ==================== */
 /* ============================================================ */
 
-.sec-8{
+.sec-8 {
     width: 100%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.container-sec-8
-{
+
+.container-sec-8 {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
-    width: 90%;
-    height: 40rem;
-    background-color: rgba(224, 255, 20, 0.616);
-    border-radius: 20px;
+    gap: 2rem;
 }
 
 
 /*  ======================= first side ========================= */
-/*  ======================= secend side ========================= */
 
+.sec-8-1-side{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.sec-8-1-side > h2{
+    font-size: 3rem;
+}
+.sec-8-1-side > span
+{
+    display: inline-block;
+    text-align: center;
+    color: #1a1a1a;
+}
+/*  ======================= secend side ========================= */
+.sec-8-1-side {
+    display: flex;
+}
 
 
 
@@ -1873,9 +1888,11 @@ section.featured-Properties {
         width: 34rem;
         height: 50rem;
     }
-    .sec-7-1-side>p{
+
+    .sec-7-1-side>p {
         width: 100%;
     }
+
     .sec-7-1-side>div {
         display: flex;
         align-items: center;
@@ -2091,20 +2108,24 @@ section.featured-Properties {
     .card-item-sec-2 {
         width: 100%;
     }
-    .sec-7-1-side>div
-    {
+
+    .sec-7-1-side>div {
         flex-direction: column;
         align-items: flex-start;
     }
+
     .sec-7-2-side {
         width: 100%;
     }
+
     .container-sec-7 {
         padding: 10px;
     }
+
     .sec-7-1-side>p {
         max-width: 31rem;
     }
+
     .sec-7-1-side>h2 {
         font-size: 2rem;
         max-width: 21rem;
@@ -2147,10 +2168,12 @@ section.featured-Properties {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .container-sec-7 {
         padding: 10px;
         width: 100%;
     }
+
     .sec-7-2-side {
         height: 38rem;
     }
