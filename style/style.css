@@ -1838,10 +1838,11 @@ footer {
     gap: 1.5rem;
     width: 100%;
     height: auto;
+    padding: 10px;
 }
 
 .part-1 {
-    width: 60%;
+    width: 90rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1880,7 +1881,7 @@ footer {
 }
 
 .spase-between{
-    width: 60%;
+    width: 90rem;
     height: 1px;
     background-color: #d7d7d7a2;
 }
@@ -1888,7 +1889,7 @@ footer {
 /* ================= last-conatiner =================== */
 
 .last-conatiner{
-    width: 60%;
+    width: 90rem;
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -1982,11 +1983,11 @@ footer {
 .last-part
 {
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
-    margin-bottom: 1rem;
     align-items: center;
     justify-content: center;
+    font-size: .9rem;
     color: var(--color);
     font-family: var(--fontStyleNumber),'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -2179,6 +2180,15 @@ footer {
 
     header>nav>div {
         margin-left: 6rem;
+    }
+    .last-conatiner{
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+    .part-1, 
+    .last-conatiner,
+    .spase-between{
+        width: 100%;
     }
 }
 
@@ -2522,6 +2532,9 @@ footer {
     .container-sec-4>div:nth-child(2)>div>p {
         width: 19.8rem;
     }
+    .last-conatiner-2{
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 703px) {
@@ -2679,6 +2692,12 @@ footer {
 
     .secend-row-home-container {
         bottom: -49rem;
+    }
+    .part-1{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
     }
 }
 
